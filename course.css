@@ -1,12 +1,66 @@
-.course-card{
+.course-card {
   background-color: #f6f3f3;
   width: 100%;
   padding-bottom: 5rem;
 }
-.main-back{
+
+.main-back {
   background-image: url(images/Our\ Courses.png);
   height: 40vh;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
+
+.actbtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5rem;
+  gap: 1rem;
+}
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.holder #NAT {
+  display: block;
+}
+
+#NAT,
+#JLTC,
+#JLTP {
+  background-color: #244e6a;
+  color: white;
+  width: 70%;
+  position: relative;
+  padding: 10px;
+  top: 40px;
+  border-radius: 20px;
+}
+
+/* #JLTC {
+  background-color: #244e6a;
+  color: white;
+  width: 70%;
+  position: relative;
+  left: 20%;
+  padding: 10px;
+  top: 40px;
+  border-radius: 20px;
+}
+
+#JLTP {
+  background-color: #244e6a;
+  color: white;
+  width: 70%;
+  position: relative;
+  left: 20%;
+  padding: 10px;
+  top: 40px;
+  border-radius: 20px;
+  height: auto;
+} */
