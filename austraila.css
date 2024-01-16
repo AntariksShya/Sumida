@@ -110,6 +110,28 @@
 /* end of styling table */
 /* end of container-one */
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+td:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+th {
+  background-color: #1411A0;
+  color: #fff;
+}
 
 .Divider {
   width: 100px;
@@ -170,11 +192,6 @@
     text-align: center;
   }
 
-  .main .table {
-    justify-content: center;
-    gap: 0;
-  }
-
   .main .Timeline {
     margin-top: 5rem;
   }
@@ -188,15 +205,15 @@
     margin: auto;
     padding-top: 25%;
     text-align: center;
-}
+  }
 
-.main {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+  .main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-.Timeline {
-  transform: translateX(-5%);
-}
+  .Timeline {
+    transform: translateX(-5%);
+  }
 
 }
