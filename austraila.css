@@ -14,27 +14,31 @@
 
 
 .container-one {
-  max-width: var(--max-width);
+  max-width: 90%;
   margin: auto;
   padding: 4rem 1rem 2rem 1rem;
   align-items: center;
   color: var(--text-color);
 }
+
 .sub-container-one-one {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.5rem;
 }
+
 .container-one h5 {
   font-size: 1.5rem;
   text-align: center;
   margin: 0px 0px 1rem 0px;
   color: var(--primary-color);
 }
+
 .container-one p {
   font-size: 1rem;
   text-align: justify;
 }
+
 /* styling table */
 .container-one table {
   width: 100%;
@@ -42,20 +46,24 @@
   border-collapse: collapse;
   height: 650px;
 }
-.container-one table td{
+
+.container-one table td {
   border-top: 1px solid var(--secondary-color);
   border-right: 1px solid var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
   padding: 12px;
 }
-.container-one table tr:nth-child(even){
+
+.container-one table tr:nth-child(even) {
   background-color: #F2F2F2;
 }
+
 .container-one table tr:hover {
   background-color: #ddd;
 }
+
 .container-one table th {
-  padding: 12px 0px 12px 12px ;
+  padding: 12px 0px 12px 12px;
   background-color: var(--primary-color-dark);
   color: #04AA6D;
   color: white;
@@ -74,17 +82,21 @@
   z-index: -1000;
   width: auto;
 }
+
 .hero-container-brightness {
   backdrop-filter: brightness(50%);
   height: 27rem;
   z-index: -1000;
 }
+
 .hero-container h1 {
   color: var(--white);
-  transform: translate(15%, 50%);
   font-size: 100px;
   width: fit-content;
+  margin: auto;
+  padding-top: 8.5rem;
 }
+
 .hero-container h5 {
   font-size: 1.5rem;
   color: var(--white);
@@ -93,6 +105,98 @@
   width: 700px;
   transform: translate(0%, 125%);
 }
+
 /* hero-container end */
 /* end of styling table */
 /* end of container-one */
+
+
+.Divider {
+  width: 100px;
+  height: 0px;
+  transform: rotate(90deg);
+  border: 2px black solid;
+}
+
+.tcontent {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+  display: inline-flex
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  display: inline-flex
+}
+
+.main .container {
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  display: flex
+}
+
+.main .Column {
+  flex: 1 1 0;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  display: inline-flex
+}
+
+@media (max-width: 1200px) {
+  .main .container {
+    flex-direction: column;
+  }
+
+  .main .container .Column .TableHead .Subheading,
+  .main .container .Column .TableHead .Heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main .table {
+    justify-content: center;
+    gap: 0;
+  }
+
+  .main .Timeline {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container h1 {
+    color: var(--white);
+    font-size: 70px;
+    width: fit-content;
+    margin: auto;
+    padding-top: 25%;
+    text-align: center;
+}
+
+.main {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.Timeline {
+  transform: translateX(-5%);
+}
+
+}
