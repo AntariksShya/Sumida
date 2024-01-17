@@ -702,28 +702,12 @@ a:hover {
   margin: 5% 0 0 0;
 }
 
-.education {
+.education, .visa, .loan {
   background-color: #02416b;
   border-radius: 20px;
   width: 25%;
   height: 100%;
-  padding: 36px;
-}
-
-.visa {
-  background-color: #02416b;
-  border-radius: 20px;
-  width: 25%;
-  padding: 36px;
-  height: 100%;
-}
-
-.loan {
-  background-color: #02416b;
-  border-radius: 20px;
-  width: 25%;
-  padding: 36px;
-  height: 100%;
+  padding: 36px 36px 16px 36px;
 }
 
 .line {
